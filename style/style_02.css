@@ -26,6 +26,32 @@ header#cabeçalho{
     align-items: center;
 }
 
+#btnCoração{
+    width: 100px;
+    height: 100px;
+    background: url("../media/coracao.jpg");
+    background-size: cover;
+
+    color: black;
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-shadow: 2px 2px 1px rgb(9, 255, 0);
+    transition: transform 0.4s;
+}
+
+#btnCoração:hover{
+    cursor: url("../cursor/cursor_02.cur"), auto;
+    transform: translate(-2px, -2px);
+}
+
+#coracion {
+    width: 200px;
+    height: 140px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .coracoes {
     position: relative;
     width: 100%;
@@ -98,10 +124,11 @@ main {
 }
 
 #centralizar{
+    font-size: 1.2em;
     text-indent: 20px;
     padding-top: 50px;
     display: flex;
-
+    font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
 }
 
@@ -182,3 +209,25 @@ ul {
 li {
     margin-bottom: 10px;
 }
+
+footer {
+    background-color: rgb(196, 192, 192);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(185, 7, 111);
+}
+
+body { cursor: url("../cursor/cursor_01.cur"), auto; }
