@@ -26,6 +26,34 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.getElementById('btnCoração').addEventListener('click', function() {
+    const coracoesDiv = document.getElementById('coracoes');
+    
+    // Criar o coração
+    const coracao = document.createElement('div');
+    coracao.classList.add('coração');
+    coracao.innerHTML = '❤️ ❣️ ❤️ ❣️';  // Emoji do coração
+    
+    // Posição aleatória para o coração
+    coracao.style.left = Math.random() * 100 + '%'; // Posição aleatória na largura
+    
+    // Adicionando o coração à tela
+    coracoesDiv.appendChild(coracao);
+    
+    // Adiciona a classe 'subindo' para animar o coração
+    setTimeout(() => {
+        coracao.classList.add('subindo');
+    }, 10);
+    
+    // Remove o coração após a animação
+    setTimeout(() => {
+        coracao.remove();
+    }, 1000); // Remove após 1 segundo (quando a animação terminar)
+});
+
+
+
+
 // 1️⃣ document → Representa a página web (o DOM - Document Object Model).
 
 // 2️⃣ addEventListener("DOMContentLoaded", function() {...})
