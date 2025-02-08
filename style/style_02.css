@@ -12,6 +12,20 @@ body, html {
     overflow-x: hidden;
 
    /*  O 100vw pode causar rolagem lateral porque inclui a barra de rolagem vertical no cálculo da largura da tela. */
+}
+
+#botao_voltar {
+    width: 100px;
+    height: 0px;
+}
+
+#voltar {
+    font-size: 1.5em;
+    color: rgb(10, 66, 219);
+    font-weight: bolder;
+    margin-left: 10px;
+    text-decoration: none;
+}
 
 #btnTraduzir {
     width: 250px;
@@ -60,7 +74,6 @@ header#cabeçalho{
 }
 
 #coracion {
-    
     width: 200px;
     height: 140px;
 
@@ -68,6 +81,7 @@ header#cabeçalho{
     align-items: center;
     justify-content: center;
 }
+
 .coracoes {
     position: relative;
     width: 100%;
@@ -177,8 +191,6 @@ main {
     transform: translate(10px, 0px);
     
 }
-
-
 
 
 #estudos {

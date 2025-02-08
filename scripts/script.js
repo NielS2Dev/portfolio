@@ -34,9 +34,10 @@ document.getElementById('btnCoração').addEventListener('click', function() {
     coracao.classList.add('coração');
     coracao.innerHTML = '❤️ ❣️ ❤️ ❣️';  // Emoji do coração
     
-    // Posição aleatória para o coração
-    coracao.style.left = Math.random() * 100 + '%'; // Posição aleatória na largura
-    
+    // Posição aleatória na tela
+    coracao.style.left = Math.random() * 100 + '%'; // Aleatório na largura
+    coracao.style.top = Math.random() * 100 + '%'; // Aleatório na altura
+
     // Adicionando o coração à tela
     coracoesDiv.appendChild(coracao);
     
