@@ -12,11 +12,26 @@ body, html {
     overflow-x: hidden;
 
    /*  O 100vw pode causar rolagem lateral porque inclui a barra de rolagem vertical no cálculo da largura da tela. */
+
+#btnTraduzir {
+    width: 250px;
+    height: 40px;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 2px 3px 2px black;
+    font-weight: bolder;
+    font-size: 1.2em;
+
+    background: url('../media/brasil_eua.png');
+}
+
+#btnTraduzir:hover {
+    cursor: pointer;
 }
 
 header#cabeçalho{
     width: 100vw;
-    height: 500px;
+    height: 600px;
     background: linear-gradient(to bottom, #c219b4, #FC8FCA);
     
 
@@ -27,13 +42,13 @@ header#cabeçalho{
 }
 
 #btnCoração{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     background: url("../media/coracao.jpg");
     background-size: cover;
 
     color: black;
-    font-size: 1.2em;
+    font-size: 0.8em;
     font-weight: bolder;
     text-shadow: 2px 2px 1px rgb(9, 255, 0);
     transition: transform 0.4s;
@@ -45,6 +60,7 @@ header#cabeçalho{
 }
 
 #coracion {
+    
     width: 200px;
     height: 140px;
 
@@ -93,6 +109,8 @@ main {
 
  /* Mantém a proporção da imagem */
 }
+
+
 
 #ola {
     font-family: Arial, Helvetica, sans-serif;
