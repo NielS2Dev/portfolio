@@ -6,6 +6,23 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'fontegta' ;
+    src: url('../fonts/Pricedown\ Bl.otf') format('OpenType');
+}
+
+:root {
+    --fonte_minha: fontegta;
+}
+
+@media screen and (max-width: 684px) {
+    #video_youtube {
+        display: none;
+    }
+}
+
+
+
 body, html {
     width: 100%;
     height: 100vh;
@@ -46,7 +63,10 @@ body, html {
 header#cabeçalho{
     width: 100vw;
     height: 600px;
-    background: linear-gradient(to bottom, #c219b4, #FC8FCA);
+
+    background: linear-gradient(to top, rgba(79, 59, 173, 0.8) 20%, rgb(252, 143, 202, 1) 80%);
+    
+    /* background: linear-gradient(to bottom, #c219b4, #FC8FCA); */
     
 
     display: flex;
@@ -116,8 +136,8 @@ main {
 }
 
 #computador {
-    width: 30vw;
-    height: 30vw;
+    width: 200px;
+    height: 14  0px;
 
 
 
@@ -127,10 +147,12 @@ main {
 
 
 #ola {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte_minha);
     color: white;
     font-weight: bolder;
-    font-size: 2em;
+    font-size: 2.3em;
+    letter-spacing: 2px;
+    text-shadow: 4px 2px 3px black;
 
 }
 
@@ -145,13 +167,22 @@ main {
 }
 
 #img_01{
-    height: 900px;
-    background-image: url(../media/uma.jpg);
+    height: 1020px;
+    /* background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), transparent, url("../media/uma.jpg")); */
+    background-image: linear-gradient(to top, rgba(42, 27, 58, 0.8) 20%, transparent), url("../media/uma.jpg");
     /* Display: Inline-block é uma caixa que se adapta ao tamanho do conteúdo */
     background-position: right center;
     background-size: cover;
-    background-attachment: fixed;
+    
     /* A propriedade background-attachment: fixed; no CSS define se a imagem de fundo de um elemento rola junto com a página ou permanece fixa. */
+
+}
+
+#img_02 {
+    height: 900px;
+    background-image: linear-gradient(to bottom, rgba(42, 27, 58, 0.6),  transparent), url(../media/dois.jpg);
+    background-size: cover;
+    background-position:  center;
 
 }
 
@@ -181,6 +212,15 @@ main {
     backdrop-filter: blur(20px);
 
     transition: background-color 0.4s, box-shadow 0.4s, backdrop-filter 0.4s, text-shadow 0.4s, transform 0.4s;
+}
+
+
+
+#video_youtube {
+    left: 0;
+    width: 800px;
+    height: 200px;
+    margin-left: 100px;
 }
 
 .imagem p:hover{
@@ -231,10 +271,7 @@ main {
     transition: transform 0.4s;
 }
 
-ul {
-    margin: 0px;
-    padding-left: 0px;
-}
+
 
 li {
     margin-bottom: 10px;
