@@ -14,6 +14,54 @@ header > p {
     border: 2px dashed blue;
 }
 
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.bloco_principal{
+    border: 2px dashed rgb(60, 255, 0);
+    width: 80vw;
+    height: 150px;
+    background-image: url(../pictures/106018.jpg);
+}
+
+#texto_01{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+#texto_02{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+#new_login{
+    background-color: rgba(0, 140, 255, 0.733);
+    width: 80px;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 25px;
+    border-radius: 7px;
+}
+
 #imagens img {
+    padding-top: 10px;
     width: 40px;
+}
+
+#git:hover{
+    box-shadow: 2px 3px 5px red;
+    transform: translate(-2px, -2px);
+}
+
+#instagram:hover{
+    box-shadow: 2px 3px 5px red;
+    transform: translate(-2px, -2px);
+}
+
+#youtube:hover{
+    box-shadow: 2px 3px 5px red;
+    transform: translate(-2px, -2px);
 }
