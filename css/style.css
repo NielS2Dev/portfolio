@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'nielfonte_01';
+    src: url();
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header > p {
+    border: 2px dashed blue;
+}
+
+#imagens img {
+    width: 40px;
+}
